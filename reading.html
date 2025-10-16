@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tarot Insight — Ваш расклад</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Playfair+Display:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="branding">
+        <div class="branding__logo">TI</div>
+        <div class="branding__text">
+          <h1 class="branding__title">Tarot Insight</h1>
+          <p class="branding__tagline">Discover what the cards reveal ✨</p>
+        </div>
+      </div>
+      <label class="lang-switcher">
+        <span>Language</span>
+        <select data-lang-select>
+          <option value="ru">Русский</option>
+          <option value="en">English</option>
+        </select>
+      </label>
+    </header>
+
+    <main class="reading-layout">
+      <section class="reading-header">
+        <p class="hero__eyebrow" data-i18n="hero.eyebrow"></p>
+        <h2 class="hero__title" data-i18n="reading.title"></h2>
+        <div class="reading-header__category" data-selected-category>✨</div>
+      </section>
+
+      <div class="controls">
+        <button class="button" data-action="draw" data-i18n="buttons.draw">Вытянуть карты</button>
+        <button class="button button--ghost" data-action="retry" data-i18n="buttons.retry">Попробовать снова</button>
+        <button class="button button--ghost" data-action="back" data-i18n="buttons.back">Вернуться к категориям</button>
+      </div>
+
+      <p class="hero__subtitle" data-placeholder data-i18n="reading.placeholder"></p>
+
+      <div class="card-tableau" data-cards></div>
+    </main>
+
+    <footer data-i18n="footer">For entertainment purposes only 🔮</footer>
+
+    <div class="modal" data-modal role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <div class="modal__content">
+        <button class="modal__close" type="button" data-modal-close aria-label="Close">✕</button>
+        <h3 class="modal__title" id="modal-title" data-modal-title>Card</h3>
+        <p class="modal__orientation" data-modal-orientation></p>
+        <div class="modal__body" data-modal-body></div>
+      </div>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/tarot.js"></script>
+  </body>
+</html>
