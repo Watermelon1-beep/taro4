@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tarot Insight — Мистические Таро-расклады</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Playfair+Display:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="branding">
+        <div class="branding__logo">TI</div>
+        <div class="branding__text">
+          <h1 class="branding__title">Tarot Insight</h1>
+          <p class="branding__tagline">Discover what the cards reveal ✨</p>
+        </div>
+      </div>
+      <label class="lang-switcher">
+        <span>Language</span>
+        <select data-lang-select>
+          <option value="ru">Русский</option>
+          <option value="en">English</option>
+        </select>
+      </label>
+    </header>
+    <main>
+      <section class="hero">
+        <p class="hero__eyebrow" data-i18n="hero.eyebrow"></p>
+        <h2 class="hero__title" data-i18n="hero.title"></h2>
+        <p class="hero__subtitle" data-i18n="hero.subtitle"></p>
+      </section>
+
+      <section class="reading-layout">
+        <div id="category-list" class="category-grid" aria-live="polite"></div>
+      </section>
+    </main>
+    <footer data-i18n="footer">For entertainment purposes only 🔮</footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
