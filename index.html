@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tarot Destiny — Персональные послания Таро</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body data-page="index">
+    <div class="starfield" aria-hidden="true"></div>
+    <header class="site-header">
+      <div class="branding">
+        <div class="branding__logo" aria-hidden="true">TD</div>
+        <div class="branding__text">
+          <h1 class="branding__title">Tarot Destiny</h1>
+          <p class="branding__tagline" data-i18n="tagline">Discover what destiny whispers ✨</p>
+        </div>
+      </div>
+      <div class="header-controls">
+        <label class="lang-switcher">
+          <span data-i18n="language.label">Язык</span>
+          <select data-lang-select aria-label="Change language">
+            <option value="ru">Русский</option>
+            <option value="en">English</option>
+          </select>
+        </label>
+      </div>
+    </header>
+
+    <main class="layout">
+      <section class="hero">
+        <p class="hero__eyebrow" data-i18n="hero.eyebrow"></p>
+        <h2 class="hero__title" data-i18n="hero.title"></h2>
+        <p class="hero__subtitle" data-i18n="hero.subtitle"></p>
+      </section>
+
+      <section class="card form-card" aria-labelledby="destiny-form-title">
+        <h2 class="form-card__title" id="destiny-form-title" data-i18n="form.title"></h2>
+        <p class="form-card__lead" data-i18n="form.lead"></p>
+        <form class="destiny-form" data-destiny-form novalidate>
+          <div class="form-grid">
+            <label class="form-field">
+              <span data-i18n="form.fields.name"></span>
+              <input type="text" name="name" required autocomplete="name" placeholder="" />
+              <small class="form-field__hint" data-i18n="form.hints.name"></small>
+            </label>
+            <label class="form-field">
+              <span data-i18n="form.fields.birth"></span>
+              <input type="date" name="birth" required autocomplete="bday" />
+              <small class="form-field__hint" data-i18n="form.hints.birth"></small>
+            </label>
+          </div>
+
+          <fieldset class="partner-fieldset">
+            <legend data-i18n="partner.title"></legend>
+            <p class="partner-fieldset__hint" data-i18n="partner.hint"></p>
+            <div class="form-grid">
+              <label class="form-field">
+                <span data-i18n="partner.fields.name"></span>
+                <input type="text" name="partnerName" autocomplete="name" placeholder="" />
+              </label>
+              <label class="form-field">
+                <span data-i18n="partner.fields.birth"></span>
+                <input type="date" name="partnerBirth" autocomplete="bday" />
+              </label>
+            </div>
+          </fieldset>
+
+          <div class="form-actions">
+            <button type="submit" class="button button--primary" data-i18n="form.submit"></button>
+            <button type="button" class="button button--ghost" data-action="clear" data-i18n="form.reset"></button>
+          </div>
+        </form>
+        <div class="utm-note" data-i18n="form.utmNote"></div>
+      </section>
+    </main>
+
+    <footer class="site-footer">For entertainment purposes only 🔮</footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

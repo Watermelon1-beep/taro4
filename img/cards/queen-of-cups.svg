@@ -1,0 +1,12 @@
+<svg xmlns='http://www.w3.org/2000/svg' width='300' height='500' viewBox='0 0 300 500'>
+  <defs>
+    <linearGradient id='grad-queen-of-cups' x1='0%' y1='0%' x2='100%' y2='100%'>
+      <stop offset='0%' stop-color='#2f1155'/>
+      <stop offset='50%' stop-color='#432d88'/>
+      <stop offset='100%' stop-color='#d4a848'/>
+    </linearGradient>
+  </defs>
+  <rect x='0' y='0' width='300' height='500' rx='20' fill='url(#grad-queen-of-cups)' opacity='0.95'/>
+  <rect x='15' y='15' width='270' height='470' rx='15' fill='rgba(12,10,26,0.55)' stroke='#d4a848' stroke-width='3'/>
+  <text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' font-family='"Cinzel", "Playfair Display", serif' font-size='28' fill='#f2e9ff'>"Queen of Cups"</text>
+</svg>
